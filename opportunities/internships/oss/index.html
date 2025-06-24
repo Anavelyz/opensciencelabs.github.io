@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>
-      OSL Internship Program Guideline - Open Science Labs
+      OSL Open Source Internship Program - Open Science Labs
     </title>
     <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65 crossorigin=anonymous>
     <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity=sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 crossorigin=anonymous></script>
@@ -32,15 +32,15 @@
     <meta property="og:description" content="A Open Source community for sharing knowledge">
     <meta property="og:image" content="/images/thumbnail.png">
     <meta name=keywords content="open science,data science,latam">
-    <meta name="last-modified" content="2025-03-02">
-    <meta name="DC.date.modified" content="2025-03-02">
-    <meta property="og:updated_time" content="2025-03-02T00:00:00Z">
+    <meta name="last-modified" content="2025-06-24">
+    <meta name="DC.date.modified" content="2025-06-24">
+    <meta property="og:updated_time" content="2025-06-24T00:00:00Z">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Open Science Labs",
-        "dateModified": "2025-03-02T00:00:00Z"
+        "dateModified": "2025-06-24T00:00:00Z"
       }
     </script>
     <link rel=apple-touch-icon sizes=180x180 href=/icons/apple-touch-icon.png>
@@ -146,7 +146,7 @@
           
           
             
-            <div class="nav_parent ">
+            <div class="nav_parent nav_active">
               <a href="../../" class="nav_item" title="Opportunities">
                 Opportunities
               </a>
@@ -157,12 +157,28 @@
               
               
               
+              
+              
 
-              <div class="nav ">
-                <a href="../../.." class="nav_item" title="Open Source Internship">
-                  Open Source Internship
+              <div class="nav nav_active">
+                <a href="../../.." class="nav_item" title="OSS Internship">
+                  OSS Internship
                 </a>
               </div>
+              
+              
+              
+              
+              
+              
+
+              <div class="nav ">
+                <a href="../../.." class="nav_item" title="OSS Research Seed Internship">
+                  OSS Research Seed Internship
+                </a>
+              </div>
+              
+              
               
               
               
@@ -176,6 +192,8 @@
               
               
             </div>
+            
+          
             
           
             
@@ -206,7 +224,19 @@
               </div>
               
               
+              
+              
+
+              <div class="nav ">
+                <a href="../../.." class="nav_item" title="Open Proposals">
+                  Open Proposals
+                </a>
+              </div>
+              
+              
             </div>
+            
+          
             
           
             
@@ -334,6 +364,27 @@
         <div class='nav_body nav_extra extra'>
           <!-- SUB-MENU -->
           
+              <div class="nav_active" style="border-top:1px solid white;">
+                  <a href="./" class="nav_item" title="OSS Internship">
+                    OSS Internship
+                  </a>
+                </div>
+                
+            
+              <div class="" style="border-top:1px solid white;">
+                  <a href="../oss-research-seed/" class="nav_item" title="OSS Research Seed Internship">
+                    OSS Research Seed Internship
+                  </a>
+                </div>
+                
+            
+              <div class="" style="border-top:1px solid white;">
+                  <a href="../../gsoc/" class="nav_item" title="Google Summer of Code">
+                    Google Summer of Code
+                  </a>
+                </div>
+                
+            
         </div>
       </nav>
     </header>
@@ -344,6 +395,11 @@
       <div class=container>
         <section class="content-inner">
           
+          <!--
+          <div class="d-none d-sm-none d-md-block" style="margin-top:80px"></div>
+          <div class="d-block d-sm-block d-md-none" style="margin-top:50px"></div>
+          -->
+          
           
 
 <section>
@@ -351,10 +407,47 @@
     
 
     
+          
+          
+          
+          
+          
+          
+          
 
     <div class="col">
       <!-- List group for sidebar menu -->
       <div class="list-group pt-4">
+        
+        <a
+          href="/opportunities/internships/oss/project-ideas/"
+          class="list-group-item list-group-item-action">
+          Project Ideas
+        </a>
+        
+        <a
+          href="/opportunities/guides/contribution/"
+          class="list-group-item list-group-item-action">
+          Contribution Guidelines
+        </a>
+        
+        <a
+          href="/opportunities/internships/guides/interns/"
+          class="list-group-item list-group-item-action">
+          Candidates' Guide
+        </a>
+        
+        <a
+          href="/opportunities/internships/templates/projects-ideas/"
+          class="list-group-item list-group-item-action">
+          Template: Projects Ideas
+        </a>
+        
+        <a
+          href="/opportunities/internships/templates/candidate-proposal/"
+          class="list-group-item list-group-item-action">
+          Template: Candidates's Project Proposal
+        </a>
         
       </div>
 
@@ -363,7 +456,73 @@
     
     <div class="col-md-9 mx-auto">
       
-        
+        <h1 id="open-source-internship-program">Open Source Internship Program<a class="headerlink" href="#open-source-internship-program" title="Permanent link"> #</a></h1>
+<p>This document provides guidelines for both open-source project maintainers and
+internship candidates at Open Science Labs (OSL).</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"> #</a></h2>
+<p>OSL is committed to fostering innovation and growth within the open science and
+open source communities. This internship program embodies that commitment by
+providing a dynamic and supportive environment for contributors at all
+levels—from students just stepping into the world of open-source to
+professionals looking to refine their skills.</p>
+<p>This program operates in partnership with
+<a href="https://thegraphnetwork.org">The GRAPH Network</a>, enhancing our reach and impact
+across the scientific community.</p>
+<h2 id="program-structure">Program Structure<a class="headerlink" href="#program-structure" title="Permanent link"> #</a></h2>
+<p>Modeled after Google Summer of Code, our program offers the following key
+features:</p>
+<ul>
+<li><strong>Open Participation</strong>: Open to everyone from students to professionals, we
+  embrace diversity in knowledge and experience. Applicants should submit their
+  project ideas directly to the mentors via email.</li>
+<li><strong>Flexible Commitment</strong>: Participants are expected to contribute a minimum of
+  20 hours per week, allowing for substantial contribution while accommodating
+  personal schedules.</li>
+<li><strong>Rolling Applications</strong>: We accept applications on a rolling basis, providing
+  flexibility to accommodate participants' timing and availability. This ensures
+  opportunities are accessible year-round, allowing you to engage when it suits
+  you best.</li>
+<li><strong>Final Presentation</strong>: Participants will present their projects at the
+  program's conclusion, enhancing their public speaking and technical
+  communication skills.</li>
+<li><strong>Non-Monetary Rewards</strong>: While the internship does not provide financial
+  compensation, it offers invaluable experience, mentorship, networking
+  opportunities, and the satisfaction of contributing to significant open-source
+  projects.</li>
+</ul>
+<h2 id="for-intern-candidates">For Intern Candidates<a class="headerlink" href="#for-intern-candidates" title="Permanent link"> #</a></h2>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> #</a></h3>
+<p>Prospective interns must meet the following criteria:</p>
+<ul>
+<li><strong>English Proficiency</strong>: Effective communication in English is required for
+  collaboration within the program.</li>
+<li><strong>Age Requirement</strong>: Applicants must be at least 18 years old at the time of
+  application.</li>
+<li><strong>Time Commitment</strong>: A minimum of 20 hours per week is required during the
+  3-month internship period.</li>
+<li><strong>Opportunity Nature:</strong> This is primarily an unpaid internship designed to
+  provide practical experience and build professional networks. If any
+  compensation is available, it will be specified by the mentors in the
+  internship announcement.</li>
+<li><strong>Initial Contribution</strong>: Candidates must make a preliminary contribution to
+  their chosen project, allowing mentors to evaluate their skills and
+  commitment.</li>
+</ul>
+<p>This program is perfect for those passionate about open science and eager to
+contribute to our projects. If you meet these requirements and are ready to
+engage with innovative projects, we encourage you to apply.</p>
+<p>For a full list of projects under the OSL umbrella, visit
+<a href="/projects/list/">here</a>. To learn more, please contact the project maintainer
+directly.</p>
+<h2 id="for-open-source-project-contributors">For Open-Source Project Contributors<a class="headerlink" href="#for-open-source-project-contributors" title="Permanent link"> #</a></h2>
+<p>If you are a maintainer or core contributor of an open-source project, you can
+submit your project for affiliation with OSL, making it eligible for our
+Internship Program.</p>
+<p>For more information on affiliation, please visit
+<a href="/projects/affiliation/">Projects Affiliation</a>.</p>
+<p>If your project is already affiliated with OSL, you can submit your project idea
+proposal to <code>team@opensciencelabs.org</code>. Please use the template provided at
+<a href="/opportunities/internships/templates/projects-ideas/">Project Idea Template</a>.</p>
       
     </div>
   </div>
@@ -374,7 +533,7 @@
           <i>
             <!-- This section adds support for localized revision dates -->
             
-            <small>Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-03-02</span></small>
+            <small>Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-03-25</span></small>
             
             
           </i>
